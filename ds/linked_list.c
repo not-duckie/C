@@ -1,27 +1,59 @@
-#include<stdiol.h>
+#include<stdio.h>
 #include<stdlib.h>
-//#include<string.h>
+#include<string.h>
 
-struct Node {
+struct node {
 	int data;
-	struct Node *next;
+	char name[20];
+	struct node* next;
+};
+struct node* head;
+struct node* top;
+
+void push(){
+	int x;
+	char name[20];
+	struct node* tmp;
+	tmp = (struct node*)malloc(sizeof(struct node));
+	printf("Enter the value of employee id\n");
+	scanf("%d",&x);
+	getchar();
+	printf("Enter the name of the employee\n");
+	fgets(name,sizeof(name),stdin);
+	tmp->next = head;
+	tmp->data = x;
+	strcpy(tmp->name,name);
+	head = tmp;
+}
+void display(){
+	struct node* tmp;
+	tmp = head;
+	while(tmp!=NULL){
+		printf("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\t")
+		printf("\t%d\t",tmp->data);
+		puts(tmp->name);
+		tmp = tmp->next;
+	}
 }
 
+
 void main(){
-	int i=0,x;
-	struct Node *head;
-	head = (struct Node*)malloc(sizeof(struct Node));
-	head->next=NULL;
-	head->data=1;
-	while(i!=10){
-	i++;
-	printf("Enter a data\n");
-	scanf("&d",&x);
-	struct Node *tmp ;
-	tmp = (struct *)malloc(sizeof(struct Node));
-	tmp->next=NULL;
-	tmp->data=x;
-	
-	}
+	int x,i;
+	char str[20];
+	top = (struct node*)malloc(sizeof(struct node));
+	printf("Stack Empty");
+	printf("Enter the value of empolyee id\n");
+	scanf("%d",&x);
+	getchar();
+	printf("Enter the name of the employee\n");
+	fgets(str,sizeof(str),stdin);
+	head = top;
+	top->data=x;
+	strcpy(top->name,str);
+	top->next = NULL;
+	push();
+	push();
+	push();
+	display();
 
 }
