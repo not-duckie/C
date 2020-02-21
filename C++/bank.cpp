@@ -42,8 +42,8 @@ void bank::display() {
 	cout<<"Current Balance is "<<bal<<endl;
 }
 int main(){
-bank nice[3];
-for(int i=0;i<3;i++){
+bank nice[1];
+for(int i=0;i<1;i++){
 	cout<<"========================"<<endl;
 	nice[i].initial(i+1);
 	cout<<"========================"<<endl;
