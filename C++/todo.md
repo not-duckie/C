@@ -1,6 +1,6 @@
 # EXPERIMENT-1 : Basic Programs
 1. Read two nos. and print sum of the two nos.
-1. Read three nos. u,a,t and calculate the function s,where s=u*t + 0.5*a*t*t.
+1. Read three nos. u,a,t and calculate the function s,where s=ut + 0.5at^2.
 1. Calculate average of two nos. Also print the remainder if 2nd is divided by 1st.
 1. Read two nos. and print greater no. using ternary operator.
 1. Convert Farenheit temperature to Celsius temperature.
