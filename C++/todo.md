@@ -25,7 +25,13 @@ Member functions
 # Experiment 3
 WAP that illustrates the use of objects as function arguments .Perform the addition of time in hrs and min format .
 
+
 # Experiment 4
+
+Create two classes dm and db which stores the value of distance. dm stores distance in meters and centimeters and db in feet and inches. Write a program that can read values for the class objects and add one object dm with the other object db. Use a friend function to carry out the addtion of the operation. The object that stores the result may be a dm object or db object depending on the units in which the results are required.
+
+
+# Experiment 5
 WAP payroll system of organisation system
 1. Emp Name
 1. Emp Code
