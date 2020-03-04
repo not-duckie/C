@@ -47,7 +47,6 @@ int main(){
 
         }
         multiply(arr,3,3);
-				cout<<endl<<endl<<"Aakanksha Datyal"<<endl<<"002 IT/2nd Year"<<endl;
 
 }
 

@@ -21,13 +21,15 @@ int check_month(int d, int m, int y){
 			else { return 0; }
 		}
 	}
-	else {	if( m%2 == 0){ if(d>0 && d<=31){ return 1 ;}
- 													else {return 0; }	}
-					else{
-						if(d>0 && d<=30){ return 1; }
-						else {return 0; }
-					}
-	}
+	else {	if( m%2 == 0){ 	
+				if(d>0 && d<=31){ return 1 ;}
+ 				else {return 0; }	
+ 			}
+			else{
+				if(d>0 && d<=30){ return 1; }
+				else {return 0; }
+				}
+		}
 }
 
 int check_year(int y){ return ( y <= 20 && y > 0)?1:0 ; }

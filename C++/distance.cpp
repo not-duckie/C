@@ -39,17 +39,9 @@ void dm::add(db b){
 
 
 int main(){
-	
-	cout<<"\n\n\n";
-	
 	dm nice;
 	db wow;
 	nice.read();
 	wow.read();
 	nice.add(wow);
-
-
-	cout<<"\n\n\n";
-
-
 }
